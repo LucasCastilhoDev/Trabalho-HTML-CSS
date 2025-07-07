@@ -1,19 +1,328 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<header>
-  <nav></nav>
-</header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <title>Luna • Casas no Campo</title>
+  </head>
 
-<main><div></div></main>
+  <body>
+    <header class="margin-bottom">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light py-4">
+        <div class="container">
+          <img
+            class="navbar-brand fw-bold"
+            src="./img/icons/luna.svg"
+            alt="Luna Logo"
+          />
 
-<footer></footer>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Alternar navegação"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-<body>
-  
-</body>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav gap-3">
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Quem somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nossas Casas</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container margin-bottom">
+      <section class="margin-bottom">
+        <div
+          id="heroCarousel"
+          class="carousel slide container‑fluid p-0"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <picture>
+                <source
+                  media="(max-width: 576px)"
+                  srcset="./img/mobilegaleria1.jpg"
+                  width="400"
+                  height="400"
+                />
+
+                <img
+                  class="object-fit-cover"
+                  src="./img/abby-rurenko-uOYak90r4L0-unsplash.jpg"
+                  width="1440"
+                  height="479"
+                  alt="Slide 1"
+                />
+              </picture>
+            </div>
+
+            <div class="carousel-item">
+              <picture>
+                <source
+                  media="(max-width: 576px)"
+                  srcset="./img/mobilegaleria2.jpg"
+                  width="400"
+                  height="400"
+                />
+
+                <img
+                  src="./img/alina-makhatyrova-QJVAxHJ6eWE-unsplash.jpg"
+                  class="object-fit-cover"
+                  width="1440"
+                  height="479"
+                  alt="Slide 2"
+                />
+              </picture>
+            </div>
+
+            <div class="carousel-item">
+              <picture>
+                <source
+                  media="(max-width: 576px)"
+                  srcset="./img/mobilegaleria3.jpg"
+                  width="400"
+                  height="400" />
+
+                <img
+                  src="./img/andrea-davis-IWfe63thJxk-unsplash.jpg"
+                  class="object-fit-cover"
+                  width="1440"
+                  height="479"
+                  alt="Slide 3"
+              /></picture>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="row align-items-center margin-bottom">
+        <div class="col-md-8">
+          <h2 class="fw-bold mb-3">Luna: Seu Refúgio no Campo</h2>
+          <p>
+            Descubra a Luna, a plataforma que leva você às mais charmosa casas
+            de campo para momentos inesquecíveis. Da acolhedora cabana de
+            madeira à espaçosa chácara com piscina e vista panorâmica, cada
+            imóvel é selecionado pensando no seu conforto, privacidade e conexão
+            com a natureza. Seja para um fim de semana romântico, reunião em
+            família ou aventura com amigos, a Luna torna fácil encontrar o
+            cenário perfeito fora da cidade. Prepare-se para viver paz, lazer e
+            experiências únicas — seu refúgio no campo começa aqui!
+          </p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img
+            src="./img/joshua-hibbert-7fJfxOFdY1U-unsplash.jpg"
+            class="img-fluid"
+            width="521"
+            height="479"
+            alt="Imagem decorativa"
+          />
+        </div>
+      </section>
+
+      <section class="text-center margin-bottom">
+        <h2 class="fw-bold mb-5">Conheça nossas casas</h2>
+        <div class="row gy-4">
+          <div class="col-12 col-md-6 col-lg-3">
+            <article class="card h-100">
+              <img
+                src="./img/abby-rurenko-uOYak90r4L0-unsplash.jpg"
+                class="card-img-top object-fit-cover"
+                width="330"
+                height="270"
+                alt="Imagem do card"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  No centro urbano, esta casa proporciona conveniência e acesso
+                  a tudo que a cidade oferece.
+                </p>
+              </div>
+              <div class="card-footer bg-transparent border-0 text-start">
+                <a href="#" class="btn btn-dark w-50">Clique Aqui</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <article class="card h-100">
+              <img
+                src="./img/aswathy-n-JT-RUtO2sfs-unsplash.jpg"
+                class="card-img-top object-fit-cover"
+                width="330"
+                height="270"
+                alt="Imagem do card"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  À beira do lago, esta casa oferece vistas deslumbrantes e
+                  serenidade aquática diária.
+                </p>
+              </div>
+              <div class="card-footer bg-transparent border-0 text-start">
+                <a href="#" class="btn btn-dark w-50">Clique Aqui</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <article class="card h-100">
+              <img
+                src="./img/leo_visions-vUl0kPGRZfg-unsplash.jpg"
+                class="card-img-top object-fit-cover"
+                width="330"
+                height="270"
+                alt="Imagem do card"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  A casa no campo oferece paz e tranquilidade com natureza
+                  exuberante ao redor para relaxar.
+                </p>
+              </div>
+              <div class="card-footer bg-transparent border-0 text-start">
+                <a href="#" class="btn btn-dark w-50">Clique Aqui</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <article class="card h-100">
+              <img
+                src="./img/vidar-nordli-mathisen-2cNh00feVzw-unsplash.jpg"
+                class="card-img-top object-fit-cover"
+                width="330"
+                height="270"
+                alt="Imagem do card"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  No alto das montanhas, esta casa oferece ar puro e vistas
+                  panorâmicas deslumbrantes.
+                </p>
+              </div>
+              <div class="card-footer bg-transparent border-0 text-start">
+                <a href="#" class="btn btn-dark w-50">Clique Aqui</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-center margin-bottom">
+        <h2 class="fw-bold mb-5">Conheça o interior das casas</h2>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+            <div class="col d-flex justify-content-center">
+              <div
+                class="rounded-circle overflow-hidden"
+                style="width: 100%; max-width: 400px; aspect-ratio: 1/1"
+              >
+                <img
+                  src="./img/andrea-davis-IWfe63thJxk-unsplash.jpg"
+                  class="w-100 h-100"
+                  alt="Interior aconchegante de cabana"
+                  style="object-fit: cover"
+                />
+              </div>
+            </div>
+
+            <div class="col d-flex justify-content-center">
+              <div
+                class="rounded-circle overflow-hidden"
+                style="width: 100%; max-width: 400px; aspect-ratio: 1/1"
+              >
+                <img
+                  src="./img/peter-herrmann-cjN_hKZq1Co-unsplash.jpg"
+                  class="w-100 h-100"
+                  alt="Sala de estar vintage"
+                  style="object-fit: cover"
+                />
+              </div>
+            </div>
+
+            <div class="col d-flex justify-content-center">
+              <div
+                class="rounded-circle overflow-hidden"
+                style="width: 100%; max-width: 400px; aspect-ratio: 1/1"
+              >
+                <img
+                  src="./img/alina-makhatyrova-QJVAxHJ6eWE-unsplash.jpg"
+                  class="w-100 h-100"
+                  alt="Quarto com vista para o campo"
+                  style="object-fit: cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-light py-5">
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3"
+      >
+        <img
+          class="navbar-brand fw-bold"
+          src="./img/icons/luna.svg"
+          alt="Luna Logo"
+        />
+        <small class="text-muted text-center text-md-end">
+          Luna.com &copy; Todos os direitos reservados.
+        </small>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
